@@ -4,13 +4,13 @@ import { api } from './AxiosService'
 class CarsService {
   async getCars() {
     // fetch data
-    const res = await api.get('/cars')
+    const res = await api.get('cars')
     // add to AppState
     AppState.cars = res.data
   }
 
   async getOne(id) {
-    const res = await api.get('/cars' + id)
+    const res = await api.get('cars/' + id)
     AppState.activeCar = res.data
   }
 

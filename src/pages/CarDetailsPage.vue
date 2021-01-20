@@ -2,7 +2,9 @@
   <div class="car-details">
     <h1>Welcome to car details</h1>
     <img v-if="state.loaded" :src="car.imgUrl" alt="" />
-    <h1 v-else>Loading...</h1>
+    <h1 v-else>
+      Loading...
+    </h1>
   </div>
 </template>
 
@@ -21,7 +23,7 @@ export default {
     // onBeforeRouteLeave(() => {
     //   AppState.activeCar = {}
     // })
-    onMounted(async () => {
+    onMounted(async() => {
       try {
         await carsService.getOne(route.params.id)
       } catch (error) {
