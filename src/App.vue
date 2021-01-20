@@ -7,6 +7,9 @@
       <router-link class="nav-item nav-link" :to="{ name: 'Houses' }">
         Houses
       </router-link>
+      <router-link :to="{ name: 'Jobs' }" class="nav-item nav-link active">
+        Jobs
+      </router-link>
     </div>
   </nav>
   <!-- NOTE Router-View allows the Router to determine which component gets loaded -->

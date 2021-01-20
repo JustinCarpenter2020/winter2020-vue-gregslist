@@ -14,6 +14,7 @@ import { useRouter } from 'vue-router'
 export default {
   name: 'HousesPage',
   setup() {
+    // review not sure what use router does
     const router = useRouter()
     const state = reactive({
       newHouse: {}
