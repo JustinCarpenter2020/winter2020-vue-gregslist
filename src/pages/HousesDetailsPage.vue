@@ -1,6 +1,20 @@
 <template>
   <div class="HousesDetails">
-    <h1>House Details</h1>
+    <h1>House Details: $ {{ house.price }}</h1>
+    <div class="row">
+      <div class="col-12">
+        <h3>
+          {{ house.description }}
+        </h3>
+        <p>
+          Bath {{ house.bathrooms }} | Bedrooms {{ house.bedrooms }}
+        </p>
+        <p>
+          {{ house.year }}
+        </p>
+        <img :src="house.imgUrl" />
+      </div>
+    </div>
   </div>
 </template>
 
