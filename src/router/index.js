@@ -4,6 +4,9 @@ import CarDetailsPage from '../pages/CarDetailsPage.vue'
 // @ts-ignore
 import CarsPage from '../pages/CarsPage.vue'
 
+// @ts-ignore
+import HousesPage from '../pages/HousesPage.vue'
+
 const routes = [
   {
     path: '/cars',
@@ -13,6 +16,10 @@ const routes = [
     path: '/cars/:id',
     name: 'CarDetails',
     component: CarDetailsPage
+  }, {
+    path: '/houses',
+    name: 'Houses',
+    component: HousesPage
   }, {
     path: '/:catchAll(.*)*',
     redirect: '/cars',

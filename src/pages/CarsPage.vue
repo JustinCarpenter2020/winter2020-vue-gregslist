@@ -6,6 +6,8 @@
       </div>
     </div>
     <div class="row">
+      <div class="col text-right">
+      </div>
       <div class="col">
         <form @submit.prevent="createCar">
           <div class="form-group-inline">
@@ -80,7 +82,9 @@
               aria-describedby="helpId"
             />
           </div>
-          <button type="submit" class="btn btn-success">Add Car</button>
+          <button type="submit" class="btn btn-success">
+            Add Car
+          </button>
         </form>
       </div>
     </div>
@@ -110,7 +114,7 @@ export default {
       try {
         carsService.getCars()
       } catch (error) {
-        console.error(error)
+        // console.error(error)
       }
     })
     return {
